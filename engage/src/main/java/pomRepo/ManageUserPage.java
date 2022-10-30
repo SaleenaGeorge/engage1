@@ -12,13 +12,7 @@ public class ManageUserPage extends BasePage {
 		super(driver);
 	}
 	
-	@FindBy(xpath="(//span[@class='navDropdownText'])[3]")
-	WebElement admin;
 	
-
-	public void clickAdmin() {
-		clickAction(admin);
-	}
 	
 	@FindBy(xpath="//a[@href=\"/users\"]")
 	WebElement manageusers;
@@ -40,6 +34,9 @@ public class ManageUserPage extends BasePage {
 	
 	public void enterUsername1() {
 		enterValue(username1, FrameworkConstants.username1);
+	}
+	public String geterrortext() {
+		return username1.getText();
 	}
 	@FindBy (xpath = "//input[@name=\"password\"]")
 	WebElement password1;
@@ -93,5 +90,17 @@ public class ManageUserPage extends BasePage {
 	
 	public void clicksave() {
 		clickAction(save);
+	}
+	@FindBy (css = "button[class='btn-close']")
+	WebElement close;
+	
+	public void clickclose() {
+		clickAction(close);
+	}
+	@FindBy (xpath = "//div[text()='User saved successfully']")
+	WebElement toastsucess;
+	
+	public String gettoasttext() {
+		return toastsucess.getText();
 	}
 }

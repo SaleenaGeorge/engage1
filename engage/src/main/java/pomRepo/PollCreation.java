@@ -10,41 +10,10 @@ public class PollCreation extends BasePage{
 		super(driver);
 	}
 	
-	@FindBy(xpath ="//button[@class='navbar-toggler collapsed']")
-	WebElement navbar;
-	
-	public void clickNavBar() {
-		clickAction(navbar);
-	}
-	
-	@FindBy (xpath = "(//span[@class='navDropdownText'])[1]")
-	WebElement poll;
-	
-	public void clickPoll() {
-		clickAction(poll);
-	}
-	
-	@FindBy (xpath = "//a[@href=\"/create\"]")
-	WebElement createpoll;
-	
-	public void clickCreatePoll() {
-		clickAction(createpoll);
-	}
-	
-	@FindBy (xpath = "//a[@href=\"/poll/user\"]")
-	WebElement managepoll;
-	
-	public void clickManagePoll() {
-		clickAction(managepoll);
-	}
 	
 	
-	@FindBy (xpath = "(//div[@class=\"container\"])[2]")
-	WebElement multiplechoice;
 	
-	public void clickMultipleChoice() {
-		clickAction(multiplechoice);
-	}
+	
 	
 	@FindBy(xpath = "//input[@class=\"poll-header-text focus-outline-none\"]")
 	WebElement pollheader;
@@ -53,12 +22,7 @@ public class PollCreation extends BasePage{
 		enterValue(pollheader, header);
 	}
 	
-	@FindBy (xpath = "//textarea[@class=\"poll-sub-text focus-outline-none\"]")
-	WebElement polldesc;
 	
-	public void enterPollDesc(String desc) {
-		enterValue(polldesc, desc);
-	}
 	
 	@FindBy(xpath = "(//input[@class=\"poll-sub-text focus-outline-none\"])[1]")
 	WebElement mcq;
@@ -90,26 +54,32 @@ public class PollCreation extends BasePage{
 	public void enterMcqoption4(String mcq4option) {
 		enterValue(mcqoption4, mcq4option);
 	}
-	@FindBy(xpath = "(//div[@class='radio-outer-circle unselected'])[2]")
+	@FindBy(xpath = "(//div[@class='radio-outer-circle unselected'])[1]")
 	WebElement correctoption;
 	
 	public void clickcorrectoption() {
 		clickAction(correctoption);
 	}
-	@FindBy(xpath = "//button[@title='New Question']")
+	@FindBy(xpath = "//button[@title='Add Question']")
 	WebElement newquestionbutton;
 	
 	public void clicknewquestion() {
 		clickAction(newquestionbutton);
 	}
+	@FindBy(xpath = "//div[text()='Question 2']")
+	WebElement question2;
 	
-	@FindBy(xpath="(//div[@class='nav-item dropdown'])[8]")
+	public void clickquestion2() {
+		clickAction(question2);
+	}
+	
+	@FindBy(xpath="(//div[@class='nav-item dropdown'])[2]")
 	WebElement changequestiondrop;
 	
 	public void changequestion() {
 		clickAction(changequestiondrop);
 	}
-	@FindBy(xpath="(//a[@class='poll-navdropdown-item dropdown-item'])[1]")
+	@FindBy(xpath="//a[text()='Short Answer']")
 	WebElement shortans;
 	
 	public void clickshortans() {
@@ -129,13 +99,13 @@ public class PollCreation extends BasePage{
 	public void entersa(String sanswer) {
 		enterValue(sa, sanswer);
 	}
-	@FindBy(xpath="(//div[@class='nav-item dropdown'])[11]")
-	WebElement changequestiondrop2;
+	@FindBy(xpath = "//div[text()='Question 3']")
+	WebElement question3;
 	
-	public void changequestion2() {
-		clickAction(changequestiondrop2);
+	public void clickquestion3() {
+		clickAction(question3);
 	}
-	@FindBy(xpath="(//a[@class='poll-navdropdown-item dropdown-item'])[5]")
+	@FindBy(xpath="//a[text()='True or False']")
 	WebElement tf;
 	
 	public void clicktf() {
@@ -147,25 +117,20 @@ public class PollCreation extends BasePage{
 	public void entertfq(String tfquestion) {
 		enterValue(tfq, tfquestion);
 	}
-	@FindBy(xpath = "(//div[@class='radio-outer-circle unselected'])[5]")
+	@FindBy(xpath = "(//div[@class='radio-outer-circle unselected'])[4]")
 	WebElement correctoptiontf;
 	
 	public void clickcorrectoptiontf() {
 		clickAction(correctoptiontf);
 	}
-	@FindBy(xpath="(//div[@class='nav-item dropdown'])[14]")
-	WebElement changequestiondrop3;
 	
-	public void changequestion3() {
-		clickAction(changequestiondrop3);
-	}
-	@FindBy(xpath="(//a[@class='poll-navdropdown-item dropdown-item'])[9]")
+	@FindBy(xpath="(//a[text()='Fill in the Blank']")
 	WebElement fitb;
 	
 	public void clickfitb() {
 		clickAction(fitb);
 	}
-	@FindBy(xpath = "(//div[@class='fitb-input-col margin-vertical-auto no-padding col'])[1]")
+	@FindBy(xpath = "//a[text()='Fill in the Blank']")
 	WebElement fitbq;
 	
 	public void enterfitbq(String fitbquestion) {

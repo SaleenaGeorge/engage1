@@ -28,13 +28,13 @@ public class LoginPage extends BasePage{
 	public void enterPassword(String password) {
 		enterValue(pass, password);
 	}
-	@FindBy (xpath = "//button[@class='Login_signInButton__2M4u5']")
+	@FindBy (xpath = "//button[text()='LOGIN']")
 	WebElement loginButton;
 	
 	public void clickLoginButton() {
 		clickAction(loginButton);
 	}
-	@FindBy (xpath = "(//span[@class='navDropdownText'])[4]")
+	@FindBy (xpath = "//span[@class=\"navDropdownText\"]")
 	WebElement logoutdrop;
 	
 	public void clicklogoutdrop() {

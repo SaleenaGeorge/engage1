@@ -11,6 +11,5 @@ public class UtilityMethods implements FrameworkConstants {
 		element.sendKeys(value);
 	}
 	
-	
 
 }

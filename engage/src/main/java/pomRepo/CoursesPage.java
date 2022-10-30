@@ -12,15 +12,9 @@ public class CoursesPage extends BasePage {
 		super(driver);
 	}
 	
-	@FindBy(xpath="(//span[@class='navDropdownText'])[2]")
-	WebElement courses;
 	
-
-	public void clickCourses() {
-		clickAction(courses);
-	}
 	
-	@FindBy(xpath="//a[@href=\"/home/create\"]")
+	@FindBy(xpath="//a[@href=\"/course/user/create\"]")
 	WebElement createcourses;
 	
 
@@ -57,6 +51,12 @@ public class CoursesPage extends BasePage {
 	
 	public void clickcreate() {
 		clickAction(create);
+	}
+	@FindBy (css = "svg[class='modal-close']")
+	WebElement close;
+	
+	public void clickclose() {
+		clickAction(close);
 	}
 }
 

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Suitechrome" parallel="none">
+ 
+<listeners><listener class-name="testScripts.Listeners"/></listeners>
+  <test name="Test it manager">
+  <parameter name="role" value="ITManager"></parameter>
     <classes>
       <class name="testScripts.CreatePollTestCase"/>
       <class name="testScripts.MnagePollsTestcase"/>
@@ -10,4 +13,21 @@
       <class name="testScripts.ManageUserTestcase"/>
     </classes>
   </test> <!-- Test -->
+
+<listeners><listener class-name="testScripts.Listeners"/></listeners>  
+  <test name="Test Creator">
+  <parameter name="role" value="Creator"></parameter>
+    <classes>
+      <class name="testScripts.CreatePollTestCase"/>
+      <class name="testScripts.MnagePollsTestcase"/>
+      <class name="testScripts.BaseTest"/>
+      <class name="testScripts.coursetestcase"/>
+      <class name="testScripts.ManageUserTestcase"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+  
+   
+  
+  
 </suite> <!-- Suite -->

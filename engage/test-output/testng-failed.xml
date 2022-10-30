@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.CreatePollTestCase">
-        <methods>
-          <include name="registerTestCase" invocation-numbers="0 1"/>
-          <include name="testCase"/>
-          <include name="log"/>
-          <include name="setUpBrowser"/>
-          <include name="browserTearDown"/>
-        </methods>
-      </class> <!-- testScripts.CreatePollTestCase -->
       <class name="testScripts.MnagePollsTestcase">
         <methods>
           <include name="testCase"/>
@@ -22,5 +13,5 @@
         </methods>
       </class> <!-- testScripts.MnagePollsTestcase -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
