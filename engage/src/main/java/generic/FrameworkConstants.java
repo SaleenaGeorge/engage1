@@ -13,6 +13,10 @@ public interface FrameworkConstants {
 	String URL="https://www.staging-qa.engage.yuja.com/";
 	
 	String EXCEL_PATH="./src/test/resources/testData/TestData.xlsx";
+	String IMAGE_PATH1="./src/test/resources/images/sample1.jpg";
+	String IMAGE_PATH2="./src/test/resources/images/sample2.jpg";
+	String IMAGE_PATH3="./src/test/resources/images/Sample3.jpg";
+	String IMAGE_PATH4="./src/test/resources/images/Sample4.jpg";
 	
 
 	String SCREENSHOT_PATH="./screenshots/";
@@ -22,7 +26,7 @@ public interface FrameworkConstants {
 	String coursecode="ps";
 	String coursename="Power System";
 	String instructorname="SaleenaCreator";
-	String date="2022-09-30";
+	String date="30-09-2022";
 	
 	String username1="saleenaaut123";
 	String password1="Saleenaauto111!";

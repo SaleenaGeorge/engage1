@@ -4,12 +4,32 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import generic.FrameworkConstants;
+
 public class PollCreation extends BasePage{
 	
 	public PollCreation(WebDriver driver) {
 		super(driver);
 	}
 	
+	@FindBy(xpath = "//span[text()='Graded Poll']")
+	WebElement gradepoll;
+	
+	public void clickgradepoll() {
+		clickAction(gradepoll);
+	}
+	@FindBy(xpath = "//a[text()='Survey']")
+	WebElement survey;
+	
+	public void clicksurvey() {
+		clickAction(survey);
+	}
+	@FindBy(xpath = "//button[text()='Switch anyway']")
+	WebElement switchanyway;
+	
+	public void clickswitchanyway() {
+		clickAction(switchanyway);
+	}
 	
 	
 	
@@ -73,7 +93,7 @@ public class PollCreation extends BasePage{
 		clickAction(question2);
 	}
 	
-	@FindBy(xpath="(//div[@class='nav-item dropdown'])[2]")
+	@FindBy(xpath="//span[text()='Multiple Choice']")
 	WebElement changequestiondrop;
 	
 	public void changequestion() {
@@ -123,20 +143,26 @@ public class PollCreation extends BasePage{
 	public void clickcorrectoptiontf() {
 		clickAction(correctoptiontf);
 	}
+	@FindBy(xpath = "//div[text()='Question 4']")
+	WebElement question4;
 	
-	@FindBy(xpath="(//a[text()='Fill in the Blank']")
-	WebElement fitb;
-	
-	public void clickfitb() {
-		clickAction(fitb);
+	public void clickquestion4() {
+		clickAction(question4);
 	}
-	@FindBy(xpath = "//a[text()='Fill in the Blank']")
+	
+	@FindBy(xpath="//a[text()='Fill in the Blank']")
+	WebElement fit;
+	
+	public void clickfit() {
+		clickAction(fit);
+	}
+	@FindBy(xpath = "//div[@class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"]")
 	WebElement fitbq;
 	
 	public void enterfitbq(String fitbquestion) {
 		enterValue(fitbq, fitbquestion);
 	}
-	@FindBy(xpath = "(//button[@id='add-button-container'])[1]")
+	@FindBy(xpath = "(//button[@id='add-button-container'])[4]")
 	WebElement addblank;
 	
 	public void clickaddblank() {
@@ -154,5 +180,10 @@ public class PollCreation extends BasePage{
 	public void clickSavePollButton() {
 		clickAction(savePollButton);
 	}
+	@FindBy(xpath = "//input[@class='browse-box']")
+	WebElement image;
+	
+	
+	}
 
-}
+

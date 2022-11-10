@@ -18,7 +18,8 @@
   <test name="Test Creator">
   <parameter name="role" value="Creator"></parameter>
     <classes>
-      <class name="testScripts.CreatePollTestCase"/>
+      <class name="testScripts.CreategradedPollTestCase"/>
+       <class name="testScripts.Createsurveypolltest"/>
       <class name="testScripts.MnagePollsTestcase"/>
       <class name="testScripts.BaseTest"/>
       <class name="testScripts.coursetestcase"/>

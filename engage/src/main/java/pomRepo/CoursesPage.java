@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import generic.FrameworkConstants;
+import generic.JavaUtility;
 
 public class CoursesPage extends BasePage {
 	public CoursesPage(WebDriver driver) {
@@ -25,7 +26,7 @@ public class CoursesPage extends BasePage {
 	WebElement coursecode;
 	
 	public void enterCoursecode() {
-		enterValue(coursecode, FrameworkConstants.coursecode
+		enterValue(coursecode, FrameworkConstants.coursecode+
 				);
 	}
 	@FindBy (xpath = "(//input[@class=\"form-control\"])[2]")
@@ -40,7 +41,7 @@ public class CoursesPage extends BasePage {
 	public void enterInstructorname() {
 		enterValue(instructorname, FrameworkConstants.instructorname);
 	}
-	@FindBy (xpath = "//input[@type='date']")
+	@FindBy (xpath = "(//input[@placeholder=\"DD-MM-YYYY\"])[2]")
 	WebElement date;
 	
 	public void enterdate() {
