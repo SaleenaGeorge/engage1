@@ -26,8 +26,7 @@ public class CoursesPage extends BasePage {
 	WebElement coursecode;
 	
 	public void enterCoursecode() {
-		enterValue(coursecode, FrameworkConstants.coursecode+
-				);
+		enterValue(coursecode, FrameworkConstants.coursecode);
 	}
 	@FindBy (xpath = "(//input[@class=\"form-control\"])[2]")
 	WebElement coursename;
