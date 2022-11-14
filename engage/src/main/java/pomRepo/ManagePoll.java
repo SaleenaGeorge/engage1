@@ -32,6 +32,13 @@ public class ManagePoll extends BasePage{
 		clickAction(publish);
 	}
 	
+	@FindBy(xpath = "//button[text()='Publish without Course']")
+	WebElement publishwithoutcourse;
+	
+	public void clickpublishwithoutcourse() {
+		clickAction(publishwithoutcourse);
+	}
+	
 	@FindBy(xpath = "//img[@class='cursor-pointer']")
 	WebElement copypoll;
 	

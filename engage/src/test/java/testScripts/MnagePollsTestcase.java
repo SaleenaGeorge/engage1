@@ -36,6 +36,7 @@ public class MnagePollsTestcase  extends BaseTest{
      alt.accept();
      managepoll.clickaction();
      managepoll.clickpublish();
+     managepoll.clickpublishwithoutcourse();
      Thread.sleep(2000);
      managepoll.clickcopypoll();
      Thread.sleep(2000);

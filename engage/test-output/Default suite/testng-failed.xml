@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.Createsurveypolltest">
+      <class name="testScripts.MnagePollsTestcase">
         <methods>
           <include name="testCase"/>
           <include name="log"/>
           <include name="setUpBrowser"/>
           <include name="browserTearDown"/>
-          <include name="registerTestCase" invocation-numbers="0"/>
+          <include name="dropdown"/>
         </methods>
-      </class> <!-- testScripts.Createsurveypolltest -->
+      </class> <!-- testScripts.MnagePollsTestcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
